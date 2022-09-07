@@ -1,0 +1,269 @@
+2021-06-20 21:43:43,975  INFO 12268 --- [restartedMain                 ] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2021-06-20 21:43:44,010 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8888/api-gateway/default
+2021-06-20 21:43:44,097 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2021-06-20 21:43:44,157 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : Response 200 OK
+2021-06-20 21:43:44,159 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.config.environment.Environment]
+2021-06-20 21:43:44,179  INFO 12268 --- [restartedMain                 ] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=api-gateway, profiles=[default], label=null, version=39ed7b24b575edd9e1a8895f2af17594a77ce1a6, state=null
+2021-06-20 21:43:44,180  INFO 12268 --- [restartedMain                 ] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2021-06-20 21:43:44,229  INFO 12268 --- [restartedMain                 ] com.api.gateway.ApiGatewayApplication    : No active profile set, falling back to default profiles: default
+2021-06-20 21:43:45,519  WARN 12268 --- [restartedMain                 ] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-06-20 21:43:45,552  WARN 12268 --- [restartedMain                 ] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2021-06-20 21:43:45,815  INFO 12268 --- [restartedMain                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=afe80cbd-aed5-3764-84da-edaf34aa07d3
+2021-06-20 21:43:46,916  INFO 12268 --- [restartedMain                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2021-06-20 21:43:46,930  INFO 12268 --- [restartedMain                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-20 21:43:46,930  INFO 12268 --- [restartedMain                 ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-20 21:43:47,113  INFO 12268 --- [restartedMain                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-20 21:43:47,114  INFO 12268 --- [restartedMain                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2852 ms
+2021-06-20 21:43:47,240  WARN 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-20 21:43:47,240  INFO 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-20 21:43:47,258  INFO 12268 --- [restartedMain                 ] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3d3b9366
+2021-06-20 21:43:48,035  WARN 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-20 21:43:48,036  INFO 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-20 21:43:48,076 DEBUG 12268 --- [restartedMain                 ] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-06-20 21:43:48,080 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-06-20 21:43:48,081 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-06-20 21:43:48,082 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-06-20 21:43:48,085 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-06-20 21:43:48,085 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2021-06-20 21:43:48,086 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2021-06-20 21:43:48,087 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-06-20 21:43:48,088 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-06-20 21:43:48,090 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2021-06-20 21:43:48,091 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2021-06-20 21:43:48,092 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-06-20 21:43:48,093 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-06-20 21:43:48,093 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-06-20 21:43:48,093 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-06-20 21:43:48,094 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-06-20 21:43:48,455  INFO 12268 --- [restartedMain                 ] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-20 21:43:48,469 DEBUG 12268 --- [restartedMain                 ] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-20 21:43:48,534 TRACE 12268 --- [restartedMain                 ] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-20 21:43:48,539 DEBUG 12268 --- [restartedMain                 ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2021-06-20 21:43:48,555 TRACE 12268 --- [restartedMain                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-06-20 21:43:48,556 TRACE 12268 --- [restartedMain                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+2021-06-20 21:43:48,556 DEBUG 12268 --- [restartedMain                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-20 21:43:48,567 DEBUG 12268 --- [restartedMain                 ] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-06-20 21:43:48,584 DEBUG 12268 --- [restartedMain                 ] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-20 21:43:49,294  INFO 12268 --- [restartedMain                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-06-20 21:43:49,683  INFO 12268 --- [restartedMain                 ] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 595fe09b-13ee-4a79-9c85-54f82677a7f2
+
+2021-06-20 21:43:49,883  INFO 12268 --- [restartedMain                 ] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@735a07ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@5816a5c0, org.springframework.security.web.header.HeaderWriterFilter@6a783cc9, org.springframework.security.web.csrf.CsrfFilter@4265e9d4, org.springframework.security.web.authentication.logout.LogoutFilter@141c56c1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72871e2a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@415d4cab, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e805dc3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a203e33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3926d708, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24e37054, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ab9d10a, org.springframework.security.web.session.SessionManagementFilter@360ac2af, org.springframework.security.web.access.ExceptionTranslationFilter@5d9f8f02, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cc7a171]
+2021-06-20 21:43:49,965  WARN 12268 --- [restartedMain                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-06-20 21:43:50,016  WARN 12268 --- [restartedMain                 ] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-06-20 21:43:50,066  INFO 12268 --- [MI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:43:50,067  INFO 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-20 21:43:50,067 TRACE 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@4a75d6cb
+2021-06-20 21:43:50,080 TRACE 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2021-06-20 21:43:50,085 TRACE 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2021-06-20 21:43:50,116  INFO 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-20 21:43:50,142 TRACE 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2021-06-20 21:43:50,150 TRACE 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2021-06-20 21:43:50,151 DEBUG 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-06-20 21:43:50,151  INFO 12268 --- [MI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 84 ms
+2021-06-20 21:43:50,603  INFO 12268 --- [restartedMain                 ] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2021-06-20 21:43:50,608  WARN 12268 --- [restartedMain                 ] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-06-20 21:43:50,751  INFO 12268 --- [restartedMain                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-06-20 21:43:50,875  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-06-20 21:43:51,002  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-06-20 21:43:51,002  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-06-20 21:43:51,380  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-06-20 21:43:51,380  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-06-20 21:43:52,025  INFO 12268 --- [restartedMain                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-06-20 21:43:52,098  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-06-20 21:43:52,099  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-06-20 21:43:52,099  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-06-20 21:43:52,100  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-06-20 21:43:52,100  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-06-20 21:43:52,100  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-06-20 21:43:52,100  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-06-20 21:43:52,276  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-06-20 21:43:52,286  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-06-20 21:43:52,298  INFO 12268 --- [restartedMain                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-06-20 21:43:52,321  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1624243432319 with initial instances count: 4
+2021-06-20 21:43:52,327  INFO 12268 --- [restartedMain                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2021-06-20 21:43:52,329  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1624243432329, current=UP, previous=STARTING]
+2021-06-20 21:43:52,332  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084: registering service...
+2021-06-20 21:43:52,358  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084 - registration status: 204
+2021-06-20 21:43:52,385  INFO 12268 --- [restartedMain                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2021-06-20 21:43:52,386  INFO 12268 --- [restartedMain                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2021-06-20 21:43:52,725  INFO 12268 --- [restartedMain                 ] com.api.gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 10.594 seconds (JVM running for 11.864)
+2021-06-20 21:45:45,089 TRACE 12268 --- [http-nio-8084-exec-4          ] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:45:45,099 TRACE 12268 --- [http-nio-8084-exec-4          ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2021-06-20 21:45:45,099 TRACE 12268 --- [http-nio-8084-exec-4          ] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-20 21:45:45,116 TRACE 12268 --- [http-nio-8084-exec-4          ] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@73b56e8d]]
+2021-06-20 21:45:45,123 DEBUG 12268 --- [http-nio-8084-exec-4          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-20 21:45:45,123 TRACE 12268 --- [http-nio-8084-exec-4          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 20 21:45:45 COT 2021, status=401, error=Unauthorized, message=Unauthorized, path=/api/productos/productos}]
+2021-06-20 21:45:45,130 TRACE 12268 --- [http-nio-8084-exec-4          ] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-06-20 21:45:45,131 DEBUG 12268 --- [http-nio-8084-exec-4          ] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401, headers={masked}
+2021-06-20 21:45:47,267 TRACE 12268 --- [http-nio-8084-exec-5          ] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:45:47,268 TRACE 12268 --- [http-nio-8084-exec-5          ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2021-06-20 21:45:47,270 TRACE 12268 --- [http-nio-8084-exec-5          ] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-20 21:45:47,270 TRACE 12268 --- [http-nio-8084-exec-5          ] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6bcf8324]]
+2021-06-20 21:45:47,270 DEBUG 12268 --- [http-nio-8084-exec-5          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-20 21:45:47,270 TRACE 12268 --- [http-nio-8084-exec-5          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 20 21:45:47 COT 2021, status=401, error=Unauthorized, message=Unauthorized, path=/api/productos/productos}]
+2021-06-20 21:45:47,271 TRACE 12268 --- [http-nio-8084-exec-5          ] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-06-20 21:45:47,272 DEBUG 12268 --- [http-nio-8084-exec-5          ] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401, headers={masked}
+2021-06-20 21:45:50,514 TRACE 12268 --- [http-nio-8084-exec-6          ] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:45:50,516 TRACE 12268 --- [http-nio-8084-exec-6          ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2021-06-20 21:45:50,516 TRACE 12268 --- [http-nio-8084-exec-6          ] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-20 21:45:50,517 TRACE 12268 --- [http-nio-8084-exec-6          ] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@e6b712e]]
+2021-06-20 21:45:50,517 DEBUG 12268 --- [http-nio-8084-exec-6          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-20 21:45:50,518 TRACE 12268 --- [http-nio-8084-exec-6          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 20 21:45:50 COT 2021, status=401, error=Unauthorized, message=Unauthorized, path=/api/productos/productos}]
+2021-06-20 21:45:50,519 TRACE 12268 --- [http-nio-8084-exec-6          ] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-06-20 21:45:50,520 DEBUG 12268 --- [http-nio-8084-exec-6          ] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401, headers={masked}
+2021-06-20 21:46:21,844 TRACE 12268 --- [http-nio-8084-exec-7          ] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:46:21,845 TRACE 12268 --- [http-nio-8084-exec-7          ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2021-06-20 21:46:21,845 TRACE 12268 --- [http-nio-8084-exec-7          ] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-20 21:46:21,846 TRACE 12268 --- [http-nio-8084-exec-7          ] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6ed45fad]]
+2021-06-20 21:46:21,846 DEBUG 12268 --- [http-nio-8084-exec-7          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-20 21:46:21,846 TRACE 12268 --- [http-nio-8084-exec-7          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 20 21:46:21 COT 2021, status=401, error=Unauthorized, message=Unauthorized, path=/api/productos/productos}]
+2021-06-20 21:46:21,847 TRACE 12268 --- [http-nio-8084-exec-7          ] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-06-20 21:46:21,848 DEBUG 12268 --- [http-nio-8084-exec-7          ] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401, headers={masked}
+2021-06-20 21:46:23,026 TRACE 12268 --- [http-nio-8084-exec-8          ] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:46:23,028 TRACE 12268 --- [http-nio-8084-exec-8          ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2021-06-20 21:46:23,029 TRACE 12268 --- [http-nio-8084-exec-8          ] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-20 21:46:23,031 TRACE 12268 --- [http-nio-8084-exec-8          ] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3ce67e13]]
+2021-06-20 21:46:23,032 DEBUG 12268 --- [http-nio-8084-exec-8          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-20 21:46:23,032 TRACE 12268 --- [http-nio-8084-exec-8          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 20 21:46:23 COT 2021, status=401, error=Unauthorized, message=Unauthorized, path=/api/productos/productos}]
+2021-06-20 21:46:23,034 TRACE 12268 --- [http-nio-8084-exec-8          ] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-06-20 21:46:23,035 DEBUG 12268 --- [http-nio-8084-exec-8          ] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401, headers={masked}
+2021-06-20 21:46:23,596 TRACE 12268 --- [http-nio-8084-exec-9          ] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:46:23,597 TRACE 12268 --- [http-nio-8084-exec-9          ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2021-06-20 21:46:23,598 TRACE 12268 --- [http-nio-8084-exec-9          ] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-20 21:46:23,598 TRACE 12268 --- [http-nio-8084-exec-9          ] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@51716c0d]]
+2021-06-20 21:46:23,599 DEBUG 12268 --- [http-nio-8084-exec-9          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-20 21:46:23,599 TRACE 12268 --- [http-nio-8084-exec-9          ] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 20 21:46:23 COT 2021, status=401, error=Unauthorized, message=Unauthorized, path=/api/productos/productos}]
+2021-06-20 21:46:23,600 TRACE 12268 --- [http-nio-8084-exec-9          ] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-06-20 21:46:23,601 DEBUG 12268 --- [http-nio-8084-exec-9          ] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401, headers={masked}
+2021-06-20 21:46:37,889  INFO 12268 --- [Thread-1                      ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2021-06-20 21:46:37,890  INFO 12268 --- [Thread-1                      ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1624243597890, current=DOWN, previous=UP]
+2021-06-20 21:46:37,890  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084: registering service...
+2021-06-20 21:46:37,899  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084 - registration status: 204
+2021-06-20 21:46:37,962  INFO 12268 --- [Thread-1                      ] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
+2021-06-20 21:46:37,971  INFO 12268 --- [Thread-1                      ] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-20 21:46:37,988  INFO 12268 --- [Thread-1                      ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-06-20 21:46:41,009  INFO 12268 --- [Thread-1                      ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-06-20 21:46:41,014  INFO 12268 --- [Thread-1                      ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084 - deregister  status: 200
+2021-06-20 21:46:41,494  INFO 12268 --- [Thread-1                      ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-06-20 21:46:42,110  INFO 12268 --- [restartedMain                 ] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2021-06-20 21:46:42,111 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8888/api-gateway/default
+2021-06-20 21:46:42,114 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2021-06-20 21:46:42,157 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : Response 200 OK
+2021-06-20 21:46:42,157 DEBUG 12268 --- [restartedMain                 ] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.config.environment.Environment]
+2021-06-20 21:46:42,158  INFO 12268 --- [restartedMain                 ] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=api-gateway, profiles=[default], label=null, version=39ed7b24b575edd9e1a8895f2af17594a77ce1a6, state=null
+2021-06-20 21:46:42,158  INFO 12268 --- [restartedMain                 ] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2021-06-20 21:46:42,170  INFO 12268 --- [restartedMain                 ] com.api.gateway.ApiGatewayApplication    : No active profile set, falling back to default profiles: default
+2021-06-20 21:46:42,722  INFO 12268 --- [restartedMain                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=afe80cbd-aed5-3764-84da-edaf34aa07d3
+2021-06-20 21:46:42,857  INFO 12268 --- [restartedMain                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2021-06-20 21:46:42,858  INFO 12268 --- [restartedMain                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-20 21:46:42,858  INFO 12268 --- [restartedMain                 ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-20 21:46:42,921  INFO 12268 --- [restartedMain                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-20 21:46:42,922  INFO 12268 --- [restartedMain                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2021-06-20 21:46:42,975  WARN 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-20 21:46:42,976  INFO 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-20 21:46:42,976  INFO 12268 --- [restartedMain                 ] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3141193c
+2021-06-20 21:46:43,346  WARN 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-20 21:46:43,346  INFO 12268 --- [restartedMain                 ] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-20 21:46:43,363 DEBUG 12268 --- [restartedMain                 ] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-06-20 21:46:43,363 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-06-20 21:46:43,363 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-06-20 21:46:43,363 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.AbstractConfigurationImpl      : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-06-20 21:46:43,364 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-06-20 21:46:43,364 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2021-06-20 21:46:43,364 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2021-06-20 21:46:43,364 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-06-20 21:46:43,365 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-06-20 21:46:43,365 DEBUG 12268 --- [restartedMain                 ] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2021-06-20 21:46:43,366 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2021-06-20 21:46:43,367 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-06-20 21:46:43,367 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-06-20 21:46:43,367 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-06-20 21:46:43,367 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-06-20 21:46:43,367 DEBUG 12268 --- [restartedMain                 ] .i.e.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-06-20 21:46:43,445  INFO 12268 --- [restartedMain                 ] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-20 21:46:43,454 DEBUG 12268 --- [restartedMain                 ] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-20 21:46:43,464 TRACE 12268 --- [restartedMain                 ] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-20 21:46:43,469 DEBUG 12268 --- [restartedMain                 ] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2021-06-20 21:46:43,477 TRACE 12268 --- [restartedMain                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-06-20 21:46:43,477 TRACE 12268 --- [restartedMain                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+2021-06-20 21:46:43,477 DEBUG 12268 --- [restartedMain                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-20 21:46:43,486 DEBUG 12268 --- [restartedMain                 ] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-06-20 21:46:43,496 DEBUG 12268 --- [restartedMain                 ] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-20 21:46:43,882  INFO 12268 --- [restartedMain                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-06-20 21:46:43,970  INFO 12268 --- [restartedMain                 ] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 42f765f8-1d53-411f-8ba8-794a7bf38755
+
+2021-06-20 21:46:43,984  INFO 12268 --- [restartedMain                 ] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7896a459, org.springframework.security.web.context.SecurityContextPersistenceFilter@4889fc8, org.springframework.security.web.header.HeaderWriterFilter@5e9c9a18, org.springframework.security.web.csrf.CsrfFilter@6f55a8ab, org.springframework.security.web.authentication.logout.LogoutFilter@342b77ea, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6aacb221, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@61c6a306, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e4ebdf0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@67873272, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21222446, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@80177d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@417c23a2, org.springframework.security.web.session.SessionManagementFilter@46da6748, org.springframework.security.web.access.ExceptionTranslationFilter@3831be25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@556c7053]
+2021-06-20 21:46:44,004  WARN 12268 --- [restartedMain                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-06-20 21:46:44,022  WARN 12268 --- [restartedMain                 ] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-06-20 21:46:44,079  INFO 12268 --- [restartedMain                 ] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2021-06-20 21:46:44,082  WARN 12268 --- [restartedMain                 ] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-06-20 21:46:44,087  INFO 12268 --- [restartedMain                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-20 21:46:44,128  INFO 12268 --- [restartedMain                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-06-20 21:46:44,155  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-06-20 21:46:44,186  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-06-20 21:46:44,186  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-06-20 21:46:44,186  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-06-20 21:46:44,186  INFO 12268 --- [restartedMain                 ] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-06-20 21:46:44,532  INFO 12268 --- [restartedMain                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-06-20 21:46:44,543  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-06-20 21:46:44,544  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-06-20 21:46:44,544  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-06-20 21:46:44,544  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-06-20 21:46:44,544  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-06-20 21:46:44,544  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-06-20 21:46:44,544  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-06-20 21:46:44,552  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-06-20 21:46:44,559  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-06-20 21:46:44,566  INFO 12268 --- [restartedMain                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-06-20 21:46:44,581  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1624243604581 with initial instances count: 5
+2021-06-20 21:46:44,586  INFO 12268 --- [restartedMain                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2021-06-20 21:46:44,586  INFO 12268 --- [restartedMain                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1624243604586, current=UP, previous=STARTING]
+2021-06-20 21:46:44,586  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084: registering service...
+2021-06-20 21:46:44,593  INFO 12268 --- [restartedMain                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2021-06-20 21:46:44,593  INFO 12268 --- [restartedMain                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2021-06-20 21:46:44,595  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084 - registration status: 204
+2021-06-20 21:46:44,840  INFO 12268 --- [restartedMain                 ] com.api.gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 3.265 seconds (JVM running for 183.979)
+2021-06-20 21:46:44,843  INFO 12268 --- [restartedMain                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-20 21:46:47,696  INFO 12268 --- [http-nio-8084-exec-2          ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-20 21:46:47,697  INFO 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-20 21:46:47,698 TRACE 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@3f5962e9
+2021-06-20 21:46:47,698 TRACE 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2021-06-20 21:46:47,699 TRACE 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2021-06-20 21:46:47,703 TRACE 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2021-06-20 21:46:47,704 TRACE 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2021-06-20 21:46:47,705 DEBUG 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-06-20 21:46:47,705  INFO 12268 --- [http-nio-8084-exec-2          ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-06-20 21:47:38,218  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-06-20 21:47:38,219  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2021-06-20 21:47:38,219  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1624243658219, current=DOWN, previous=UP]
+2021-06-20 21:47:38,220  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084: registering service...
+2021-06-20 21:47:38,225  INFO 12268 --- [lient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084 - registration status: 204
+2021-06-20 21:47:38,249  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-20 21:47:38,250  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-20 21:47:38,255  WARN 12268 --- [I TCP Connection(16)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+2021-06-20 21:47:38,259  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
+2021-06-20 21:47:38,263  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-20 21:47:38,266  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-06-20 21:47:41,297  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-06-20 21:47:41,304  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/A6ZPH5CD8080S3H.claro.co:api-gateway:8084 - deregister  status: 200
+2021-06-20 21:47:41,771  INFO 12268 --- [I TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
